@@ -43,6 +43,7 @@ class PokemonDetailsViewController: UIViewController {
         NSLayoutConstraint(item: imageView, attribute: .top, relatedBy: .equal, toItem: view, attribute: .topMargin, multiplier: 1, constant: 20).isActive = true
         NSLayoutConstraint(item: imageView, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: imageView, attribute: .left, relatedBy: .equal, toItem: view, attribute: .left, multiplier: 1, constant: 30).isActive = true
+        imageView.heightAnchor.constraint(lessThanOrEqualToConstant: 200).isActive = true
         
         view.addSubview(statsStackView)
         NSLayoutConstraint(item: statsStackView, attribute: .top, relatedBy: .equal, toItem: imageView, attribute: .bottom, multiplier: 1, constant: 20).isActive = true
